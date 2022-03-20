@@ -1,0 +1,4 @@
+<div class="w-full max-w-xl p-8 bg-white rounded shadow-md">
+    <app-todo-form (taskCreating)="addTask($event)"></app-todo-form>
+    <app-todo-list [taskList]="taskList" (deleteTaskEmitter)="deleteTask($event)"></app-todo-list>
+</div>

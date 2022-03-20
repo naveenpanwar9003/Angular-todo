@@ -1,0 +1,7 @@
+<ul class="mt-4">
+    <li class="mb-2 bg-slate-100 rounded py-2 px-4 flex items-center" *ngFor="let task of taskList" key="task.id">
+        <p class="flex-1 m-0">{{task.taskName}}</p>
+        <button class="py-2 px-4 text-sm bg-red-600 text-white transition hover:bg-red-700 rounded font-semibold"
+            (click)="deleteTask(task.id)">Delete</button>
+    </li>
+</ul>
